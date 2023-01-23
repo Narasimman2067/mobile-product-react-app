@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { ProductComponent } from './components/ProductComponent'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+    <ProductComponent/>
     </div>
   );
 }
 
 export default App;
+
+
+
+export const prodData = [
+  {
+    prodName : "FancyProduct1",
+    price :"40 -80"
+  },
+  {
+    prodName : "FancyProduct2",
+    price :"40 -80"
+  },
+  {
+    prodName : "FancyProduct3",
+    price :"40 -80"
+  },
+  {
+    prodName : "FancyProduct4",
+    price :"40 -80"
+  },
+]
